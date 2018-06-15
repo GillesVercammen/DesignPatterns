@@ -7,13 +7,13 @@ public class Main {
         HighThread[] h = new HighThread[times];
         Thread[] t = new Thread[times];
 
-        Counter mainCounter = Counter.getInstance();
+        CounterSingleton mainCounter = CounterSingleton.getInstance();
 
         for(int i = 0; i < times; i++) {
 
 
             h[i] = new HighThread(mainCounter);
-            LowThread low = new LowThread(Counter.getInstance());
+            LowThread low = new LowThread(CounterSingleton.getInstance());
 
 
             t[i] = new Thread(low);

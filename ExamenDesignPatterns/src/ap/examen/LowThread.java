@@ -2,9 +2,9 @@ package ap.examen;
 
 public class LowThread implements Runnable {
 
-	private Counter inputCounter;
+	private CounterSingleton inputCounter;
 
-	public LowThread(Counter counter) {
+	public LowThread(CounterSingleton counter) {
 		inputCounter = counter;
 	}
 	

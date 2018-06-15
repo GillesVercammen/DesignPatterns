@@ -2,9 +2,9 @@ package ap.examen;
 
 public class HighThread extends Thread {
 
-	private Counter inputCounter;
+	private CounterSingleton inputCounter;
 
-	public HighThread(Counter counter)
+	public HighThread(CounterSingleton counter)
 	{
 		inputCounter = counter;
 
